@@ -148,6 +148,20 @@ The extension integrates with the Unsplash API to fetch photos:
 - **Current Status**: May not work in newer Chrome versions
 - **Future**: Manifest V3 version will restore full compatibility
 
+### Browser-Specific New Tab URLs
+
+When testing or debugging the extension across different Chromium-based browsers, you can access the new tab page directly using these URLs:
+
+- **Arc Browser**: `arc://newtab/`
+- **Dia Browser**: `dia://newtab/`
+- **Brave Browser**: `brave://newtab/`
+
+**Note**: The extension overrides these default new tab pages when installed and active. These URLs are useful for:
+- Comparing the extension's new tab with the browser's default
+- Testing extension functionality across different browsers
+- Debugging new tab override behavior
+- Reverting to default new tab during development
+
 ## Manifest V3 Migration (In Progress)
 
 🚧 **Active Development**: This extension is being completely rewritten for Manifest V3 compatibility.
